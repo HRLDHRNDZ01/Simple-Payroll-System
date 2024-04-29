@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../Front End/Homepage.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleLogout()">▼</button>
+                    <div class="logout-container" id="logoutContainer" style="display: none;">
+                        <div class="logout-content">
+                            <p><button class="logout-btn" onclick="location.href='../Front End/Login.html';">Logout</button></p>
+                            <p><button class="logout-btn" onclick="location.href='../Front End/AccountSettings.html';">Account Settings</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>    
+    
+
+        <main>
+            <section>
+                <h2>Welcome to  Payroll System Dashboard</h2>
+
+                <div class="Profile">
+                    <div class="profile-container"> 
+                        <h3>Profile Information</h3>
+                        <p>First name: </p>
+                        <p>Last name: </p>
+                        <p>Email: </p>
+                        <p>Username: </p>
+                    </div>
+                </div>
+        
+                <div class="payroll">
+                    <div class="payroll-container">
+                        <h3>Payroll Information</h3>
+                        <p>Salary: </p>
+                        <p>Hours worked: </p>
+                        <p>Position: </p>
+                        <p>Department: </p>
+                    </div>
+            </section>
+
+            <section id="employee-directory" class="section-container">
+
+                <div class="employee-directory">
+                    <h3>Payroll Summary</h3>
+                            <p>Gross Earnings: </p>
+                            <p>Deductions: </p>
+                            <p>Net Pay: </p>                
+                </div>
+
+            </section>
+
+            <section id="time-tracking" class="timetracking-container">
+                <div class=""time-tracking>
+                    <h3>Time Tracking</h3>
+                    <form id="time-tracking-form">
+                        <label for="time-in">Time in: </label>
+                        <p><input type="time" id="time-in" name="time-in" required></p>
+                        <label for="time-out">Time out: </label>
+                        <p><input type="time" id="time-out" name="time-out" required></p>
+                        <p><button type="submit">Submit</button></p>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../Front End/homepage.js"></script>
+    <script src="../Front End/Timetracking.js"></script>
+</body>
+</html>

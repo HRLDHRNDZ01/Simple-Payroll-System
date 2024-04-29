@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+    <link rel="stylesheet" href="../Front End//AccountSettings.css">
+</head>  
+
+<body>
+    <header>
+        <button id="back-button">Back</button>
+        <h1></h1>
+    </header>
+
+    <div class="account-settings">
+        <h2>Account Settings</h2>
+
+        <div class="edit-profile-container">
+            <form id="edit-profile-form">
+                <h3>Edit Profile</h3>
+                <label for="first-name">First name:</label>
+                <p><input type="text" id="first-name" name="first-name" autocomplete="given-name" required></p>           
+                <label for="last-name">Last name:</label>
+                <p><input type="text" id="last-name" name="last-name" autocomplete="family-name" required></p>      
+                <label for="username">Username:</label>
+                <p><input type="text" id="username" name="username" autocomplete="username" required></p>
+            
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+
+        <div class="confirmation-message-container" style="display: none;">
+            <div id="confirmation-message" >
+                Changes saved successfully!
+                <button id="ok-button">Ok</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../Front End/AccountSetting.js"></script>
+    <script src="../Front End/back-button.js"></script>
+</body>
+</html>

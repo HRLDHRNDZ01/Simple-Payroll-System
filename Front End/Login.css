@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Login-container {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 40px;
+    width: 200px;
+}
+
+.Login-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Login {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Change to column to stack inputs vertically */
+    align-items: center; /* Center content horizontally within each row */
+    margin-bottom: 10px; /* Adjust as needed for spacing between rows */
+}
+
+/* Adjustments for username and password inputs */
+#username, #password {
+    margin-bottom: 10px; /* Adjust spacing between inputs */
+    width: 100%; /* Make inputs fill the container width */
+}
+
+#login-button {
+    margin-top: 10px; /* Add margin to the top of the button */
+    text-align: center;
+    width: 50%; /* Make button fill the container width */
+    align-self: center; /* Center the button vertically */
+}
